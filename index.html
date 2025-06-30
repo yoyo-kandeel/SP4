@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pearson College</title>
+  <link rel="stylesheet" href="css/mine.css" />
+</head>
+<body>
+<canvas id="background-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;"></canvas>
+
+  <!-- Header with logo and nav -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">school </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-primary">Contact Us Now</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Empowering Tomorrow’s Leaders</h1>
+      <p>World-class education & personalized learning experience.</p>
+      <button class="btn-primary">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="courses" class="features container">
+    <div class="feature">
+      <h3>Expert Instructors</h3>
+      <p>Learn from industry-leading faculty.</p>
+    </div>
+    <div class="feature">
+      <h3>Flexible Programs</h3>
+      <p>Choose full-time, part-time or online programs.</p>
+    </div>
+    <div class="feature">
+      <h3>Global Community</h3>
+      <p>Connect with peers from around the world.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container about">
+    <h2>About Us</h2>
+    <p>Pearson College has a long-standing tradition of excellence, providing students with opportunity and support to reach their full potential.</p>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="container team">
+    <h2>Meet Our Faculty</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="photo/teacher1.avif" alt="Dr. Alice Smith">
+        <h3>Dr. Alice Smith</h3>
+        <p>Professor of Computer Science</p>
+      </div>
+      <div class="member">
+        <img src="photo/teacher2.avif" alt="Prof. John Doe">
+        <h3>Prof. John Doe</h3>
+        <p>Dean of Engineering</p>
+      </div>
+      <div class="member">
+        <img src="photo/teacher2.avif" alt="Dr. Jane Roe">
+        <h3>Dr. Jane Roe</h3>
+        <p>Head of Business Studies</p>
+      </div>
+    </div>
+  </section>
+ <!-- Images used to open the lightbox -->
+<section id="programs" class="container programs">
+  <h2> Our programs </h2>
+<div class="row">
+  <div class="column">
+    <img src="photo/66e9a4d007bc4867cb9a8e9d_pexels-max-fischer-5211478.webp" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photo/66e9a4d007bc4867cb9a8e9f_pexels-zachtheshoota-1838640.avif" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photo/66e9a4d007bc4867cb9a8ea3_pexels-alexander-mass-748453803-27872051.webp" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photo/2953998.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="photo/66e9a4d007bc4867cb9a8e9d_pexels-max-fischer-5211478.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="photo/66e9a4d007bc4867cb9a8e9f_pexels-zachtheshoota-1838640.avif" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="photo/66e9a4d007bc4867cb9a8ea3_pexels-alexander-mass-748453803-27872051.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="photo/2953998.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="" onclick="currentSlide(1)" alt="Nature">
+    </div>
+    <div class="column">
+      <img class="demo" src="" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo" src="" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+    <div class="column">
+      <img class="demo" src="" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div> 
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="container contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+</body>
+<script src="js/mine.js"></script>
+</html>

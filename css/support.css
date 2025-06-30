@@ -1,0 +1,160 @@
+ @media screen and (min-width: 1200px) {
+    .support{
+    width: 100%;
+    display: flex;
+       align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 20px 20px ;
+        margin: 0 auto;
+    }
+    .support img {
+        width: 250px;
+        height: 250px;
+      
+        
+    }
+  
+    .support button{
+      display:block;
+       background-color:#00c48c;
+        border: none;
+        padding: 10px 20px;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        margin: 20px 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px var(--shadow);
+        font-family: 'poppins';
+        position: relative;
+        overflow: hidden;
+    }
+    .support button::before{
+      content: "";
+      position: absolute;
+      background-color: #224e17e8;
+      width: 0;
+      height: 0;
+      top: var(--y);
+      left: var(--x);
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    transition: 1s ;
+    }
+    .support button:hover::before{
+      width: 2000px;
+      height: 2000px;
+    }
+.support button span{
+    position: relative;
+    z-index: 100;
+    font-size: 25px;
+}
+ }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .support {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 10px;
+    margin: 0 auto;
+  }
+  .support img {
+    width: 180px;
+    height: 180px;
+  }
+  .support button {
+    display: block;
+    background-color: #00c48c;
+    border: none;
+    padding: 8px 16px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px var(--shadow);
+    font-family: 'poppins';
+    position: relative;
+    overflow: hidden;
+  }
+  .support button::before {
+    content: "";
+    position: absolute;
+    background-color: #224e17e8;
+    width: 0;
+    height: 0;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 1s;
+  }
+  .support button:hover::before {
+    width: 1200px;
+    height: 1200px;
+  }
+  .support button span {
+    position: relative;
+    z-index: 100;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .support {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 5px;
+    margin: 0 auto;
+  }
+  .support img {
+    width: 120px;
+    height: 120px;
+  }
+  .support button {
+    display: block;
+    background-color: #00c48c;
+    border: none;
+    padding: 6px 12px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px var(--shadow);
+    font-family: 'poppins';
+    position: relative;
+    overflow: hidden;
+  }
+  .support button::before {
+    content: "";
+    position: absolute;
+    background-color: #224e17e8;
+    width: 0;
+    height: 0;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 1s;
+  }
+  .support button:hover::before {
+    width: 600px;
+    height: 600px;
+  }
+  .support button span {
+    position: relative;
+    z-index: 100;
+    font-size: 16px;
+  }
+}
